@@ -13,18 +13,24 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
         string unitaDimisura;
         string descrizione;
 
-        string Codice { get { return Codice; } }
+        string Codice { get { return codice; } }
 
-        string Descrizione { get { return descrizione;} }
+        string Descrizione { get { return descrizione; } }
+
+        string UnitaDiMisura { get { return unitadimisura; } }
+
+        double Prezzo { get { return prezzo; } }
+
+
+
+        public Articolo {string codice, string descrizione,string unitadimisura, double prezzo)
+            
+         {   
+            this.codice=codice;
+            this.descrizione=descrizione;
+            this.unitadimisura=unitaDiMisura;
+            this.prezzo=Prezzo;
+         }
         
-        string UnitaDiMisura { get { return unitaDimisura; } }
-
-        double Prezzo { get { return Prezzo; } }
-
-
-
-        public Articolo {string Ccodice; string descrizione;
-
-
     }
 }

@@ -25,13 +25,14 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
             {
                 articoli.Add(txtcodice.Text, new Articolo(txtcodice.Text, cmbunitadimisura.Text, txtdescrizione.Text, Convert.ToDouble(txtprezzo.Text) ));
             }
+          lblArticolo.Text="Articolo(articoli.Count.ToString("+")";
         }
 
         private void btnvisualizza_Click(object sender, EventArgs e)
         {
             switch(cmbVisualizza.Text)
             {
-                case "Visualizza Articoli":
+            case "Visualizza Articoli":
             lstVisualizza.Items.Clear();
             foreach (KeyValuePair<string, Articolo> articoli in articoli)
             
@@ -40,7 +41,7 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
                 lstVisualizza.Items.Add(Articolo.Value.ToString());
 
             }
-                    breack;
+                    break;
         }
     }
 }

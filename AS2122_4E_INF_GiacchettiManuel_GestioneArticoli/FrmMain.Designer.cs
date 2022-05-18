@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblcodice = new System.Windows.Forms.Label();
-            this.lbldescrizione = new System.Windows.Forms.Label();
+            this.lblCodice = new System.Windows.Forms.Label();
+            this.lblDescrizione = new System.Windows.Forms.Label();
             this.lblunitadimisura = new System.Windows.Forms.Label();
-            this.lblprezzo = new System.Windows.Forms.Label();
+            this.lblPrezzo = new System.Windows.Forms.Label();
             this.txtcodice = new System.Windows.Forms.TextBox();
             this.txtdescrizione = new System.Windows.Forms.TextBox();
             this.txtprezzo = new System.Windows.Forms.TextBox();
@@ -45,23 +45,23 @@
             this.grbDettagliarticolo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblcodice
+            // lblCodice
             // 
-            this.lblcodice.AutoSize = true;
-            this.lblcodice.Location = new System.Drawing.Point(34, 38);
-            this.lblcodice.Name = "lblcodice";
-            this.lblcodice.Size = new System.Drawing.Size(44, 15);
-            this.lblcodice.TabIndex = 0;
-            this.lblcodice.Text = "Codice";
+            this.lblCodice.AutoSize = true;
+            this.lblCodice.Location = new System.Drawing.Point(34, 38);
+            this.lblCodice.Name = "lblCodice";
+            this.lblCodice.Size = new System.Drawing.Size(44, 15);
+            this.lblCodice.TabIndex = 0;
+            this.lblCodice.Text = "Codice";
             // 
-            // lbldescrizione
+            // lblDescrizione
             // 
-            this.lbldescrizione.AutoSize = true;
-            this.lbldescrizione.Location = new System.Drawing.Point(33, 91);
-            this.lbldescrizione.Name = "lbldescrizione";
-            this.lbldescrizione.Size = new System.Drawing.Size(67, 15);
-            this.lbldescrizione.TabIndex = 1;
-            this.lbldescrizione.Text = "Descrizione";
+            this.lblDescrizione.AutoSize = true;
+            this.lblDescrizione.Location = new System.Drawing.Point(33, 91);
+            this.lblDescrizione.Name = "lblDescrizione";
+            this.lblDescrizione.Size = new System.Drawing.Size(67, 15);
+            this.lblDescrizione.TabIndex = 1;
+            this.lblDescrizione.Text = "Descrizione";
             // 
             // lblunitadimisura
             // 
@@ -72,14 +72,14 @@
             this.lblunitadimisura.TabIndex = 2;
             this.lblunitadimisura.Text = "Unita di Misura";
             // 
-            // lblprezzo
+            // lblPrezzo
             // 
-            this.lblprezzo.AutoSize = true;
-            this.lblprezzo.Location = new System.Drawing.Point(37, 195);
-            this.lblprezzo.Name = "lblprezzo";
-            this.lblprezzo.Size = new System.Drawing.Size(41, 15);
-            this.lblprezzo.TabIndex = 3;
-            this.lblprezzo.Text = "Prezzo";
+            this.lblPrezzo.AutoSize = true;
+            this.lblPrezzo.Location = new System.Drawing.Point(37, 195);
+            this.lblPrezzo.Name = "lblPrezzo";
+            this.lblPrezzo.Size = new System.Drawing.Size(41, 15);
+            this.lblPrezzo.TabIndex = 3;
+            this.lblPrezzo.Text = "Prezzo";
             // 
             // txtcodice
             // 
@@ -158,10 +158,10 @@
             this.grbDettagliarticolo.Controls.Add(this.txtdescrizione);
             this.grbDettagliarticolo.Controls.Add(this.cmbunitadimisura);
             this.grbDettagliarticolo.Controls.Add(this.txtprezzo);
-            this.grbDettagliarticolo.Controls.Add(this.lblcodice);
-            this.grbDettagliarticolo.Controls.Add(this.lbldescrizione);
+            this.grbDettagliarticolo.Controls.Add(this.lblCodice);
+            this.grbDettagliarticolo.Controls.Add(this.lblDescrizione);
             this.grbDettagliarticolo.Controls.Add(this.lblunitadimisura);
-            this.grbDettagliarticolo.Controls.Add(this.lblprezzo);
+            this.grbDettagliarticolo.Controls.Add(this.lblPrezzo);
             this.grbDettagliarticolo.Controls.Add(this.btnaggiungimodicaarticoli);
             this.grbDettagliarticolo.Location = new System.Drawing.Point(61, 49);
             this.grbDettagliarticolo.Name = "grbDettagliarticolo";
@@ -201,10 +201,10 @@
 
         #endregion
 
-        private Label lblcodice;
-        private Label lbldescrizione;
+        private Label lblCodice;
+        private Label lblDescrizione;
         private Label lblunitadimisura;
-        private Label lblprezzo;
+        private Label lblPrezzo;
         private TextBox txtcodice;
         private TextBox txtdescrizione;
         private TextBox txtprezzo;
