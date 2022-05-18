@@ -37,7 +37,7 @@
             this.txtprezzo = new System.Windows.Forms.TextBox();
             this.btnaggiungimodicaarticoli = new System.Windows.Forms.Button();
             this.cmbunitadimisura = new System.Windows.Forms.ComboBox();
-            this.cmbViusalizza = new System.Windows.Forms.ComboBox();
+            this.cmbVisualizza = new System.Windows.Forms.ComboBox();
             this.btnvisualizza = new System.Windows.Forms.Button();
             this.lstVisualizza = new System.Windows.Forms.ListBox();
             this.grbDettagliarticolo = new System.Windows.Forms.GroupBox();
@@ -125,13 +125,13 @@
             this.cmbunitadimisura.Size = new System.Drawing.Size(121, 23);
             this.cmbunitadimisura.TabIndex = 8;
             // 
-            // cmbViusalizza
+            // cmbVisualizza
             // 
-            this.cmbViusalizza.FormattingEnabled = true;
-            this.cmbViusalizza.Location = new System.Drawing.Point(562, 50);
-            this.cmbViusalizza.Name = "cmbViusalizza";
-            this.cmbViusalizza.Size = new System.Drawing.Size(121, 23);
-            this.cmbViusalizza.TabIndex = 9;
+            this.cmbVisualizza.FormattingEnabled = true;
+            this.cmbVisualizza.Location = new System.Drawing.Point(562, 50);
+            this.cmbVisualizza.Name = "cmbVisualizza";
+            this.cmbVisualizza.Size = new System.Drawing.Size(121, 23);
+            this.cmbVisualizza.TabIndex = 9;
             // 
             // btnvisualizza
             // 
@@ -141,6 +141,7 @@
             this.btnvisualizza.TabIndex = 10;
             this.btnvisualizza.Text = "...";
             this.btnvisualizza.UseVisualStyleBackColor = true;
+            this.btnvisualizza.Click += new System.EventHandler(this.btnvisualizza_Click);
             // 
             // lstVisualizza
             // 
@@ -187,7 +188,7 @@
             this.Controls.Add(this.grbDettagliarticolo);
             this.Controls.Add(this.lstVisualizza);
             this.Controls.Add(this.btnvisualizza);
-            this.Controls.Add(this.cmbViusalizza);
+            this.Controls.Add(this.cmbVisualizza);
             this.Name = "FrmMain";
             this.Text = "Prova singola 4E 18/05/2022 su form e dizionari, classi e utilizzo di GIT";
             this.Load += new System.EventHandler(this.FrmMain_Load);
@@ -209,7 +210,7 @@
         private TextBox txtprezzo;
         private Button btnaggiungimodicaarticoli;
         private ComboBox cmbunitadimisura;
-        private ComboBox cmbViusalizza;
+        private ComboBox cmbVisualizza;
         private Button btnvisualizza;
         private ListBox lstVisualizza;
         private GroupBox grbDettagliarticolo;

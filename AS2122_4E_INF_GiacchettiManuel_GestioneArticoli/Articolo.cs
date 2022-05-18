@@ -13,7 +13,7 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
         string unitaDimisura;
         string descrizione;
 
-        string Codice { get { return codice; } }
+        string Codice { get { return Codice; } }
 
         string Descrizione { get { return descrizione;} }
         
@@ -23,7 +23,7 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
 
 
 
-        public Articolo {string Codice;
+        public Articolo {string Ccodice; string descrizione;
 
 
     }

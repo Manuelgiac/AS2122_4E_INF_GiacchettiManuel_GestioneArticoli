@@ -27,5 +27,20 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
             }
         }
 
+        private void btnvisualizza_Click(object sender, EventArgs e)
+        {
+            switch(cmbVisualizza.Text)
+            {
+                case "Visualizza Articoli":
+            lstVisualizza.Items.Clear();
+            foreach (KeyValuePair<string, Articolo> articoli in articoli)
+            
+            
+            {
+                lstVisualizza.Items.Add(Articolo.Value.ToString());
+
+            }
+                    breack;
+        }
     }
 }
