@@ -110,10 +110,16 @@
             this.btnaggiungimodicaarticoli.TabIndex = 7;
             this.btnaggiungimodicaarticoli.Text = "Aggiungi Modifica Articoli";
             this.btnaggiungimodicaarticoli.UseVisualStyleBackColor = true;
+            this.btnaggiungimodicaarticoli.Click += new System.EventHandler(this.btnaggiungimodicaarticoli_Click);
             // 
             // cmbunitadimisura
             // 
             this.cmbunitadimisura.FormattingEnabled = true;
+            this.cmbunitadimisura.Items.AddRange(new object[] {
+            "NR",
+            "KG",
+            "Q",
+            "T"});
             this.cmbunitadimisura.Location = new System.Drawing.Point(191, 141);
             this.cmbunitadimisura.Name = "cmbunitadimisura";
             this.cmbunitadimisura.Size = new System.Drawing.Size(121, 23);
@@ -184,6 +190,7 @@
             this.Controls.Add(this.cmbViusalizza);
             this.Name = "FrmMain";
             this.Text = "Prova singola 4E 18/05/2022 su form e dizionari, classi e utilizzo di GIT";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.grbDettagliarticolo.ResumeLayout(false);
             this.grbDettagliarticolo.PerformLayout();
             this.ResumeLayout(false);

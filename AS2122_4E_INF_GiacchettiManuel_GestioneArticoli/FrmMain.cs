@@ -2,9 +2,30 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
 {
     public partial class FrmMain : Form
     {
+        Dictionary<string, Articolo> articoli;
         public FrmMain()
         {
             InitializeComponent();
+            articoli = new Dictionary<string, Articolo>();
         }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnaggiungimodicaarticoli_Click(object sender, EventArgs e)
+        {
+          if(articoli.ContainsKey(txtcodice.Text))
+              
+            {
+                articoli[txtcodice.Text] = new Articolo(txtcodice.Text, cmbunitadimisura.Text, txtdescrizione.Text, Convert.ToDouble(txtprezzo.Text) );
+            }
+          else
+            {
+                articoli.Add(txtcodice.Text, new Articolo(txtcodice.Text, cmbunitadimisura.Text, txtdescrizione.Text, Convert.ToDouble(txtprezzo.Text) ));
+            }
+        }
+
     }
 }

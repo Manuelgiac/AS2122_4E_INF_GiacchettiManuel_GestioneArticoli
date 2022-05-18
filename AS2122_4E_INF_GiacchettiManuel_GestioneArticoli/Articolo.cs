@@ -22,5 +22,9 @@ namespace AS2122_4E_INF_GiacchettiManuel_GestioneArticoli
         double Prezzo { get { return Prezzo; } }
 
 
+
+        public Articolo {string Codice;
+
+
     }
 }
